@@ -2,7 +2,23 @@ local setVis=gg.setVisible
 local isVis=gg.isVisible
 local showmenu=false
 
-
+if tostring("@") ~= "@" then
+    gg.alert("Function Modified") 
+    print("Function Modified")
+    return os.exit() 
+elseif #tostring("@") ~= 1 then
+    gg.alert("Function Modified") 
+    print("Function Modified")
+    return os.exit() 
+elseif tostring("function: @" .. gg.getFile() .. ":2-18") ~= "function: @" .. gg.getFile() .. ":2-18" then
+    gg.alert("Function Modified") 
+    print("Function Modified")
+    return os.exit() 
+elseif string.match("function: @" .. gg.getFile() .. ":2-18", "@") == nil then
+    gg.alert("Function Modified") 
+    print("Function Modified")
+    return os.exit()
+end
 
 
 if gg.getTargetInfo().x64 then
