@@ -2,7 +2,7 @@ local setVis=gg.setVisible
 local isVis=gg.isVisible
 local showmenu=false
 
-
+gg.alert("Tes")
 
 
 if gg.getTargetInfo().x64 then
