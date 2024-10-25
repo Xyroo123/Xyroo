@@ -2,7 +2,7 @@ local setVis=gg.setVisible
 local isVis=gg.isVisible
 local showmenu=false
 
-gg.alert("Tes")
+
 
 
 if gg.getTargetInfo().x64 then
@@ -73,7 +73,7 @@ end
     end
 	if menu[9] == true then
 gg.alert("ঔৣ͜͡➳ Waktu Saat Memakai Script: "..string.format("%.2f",os.clock() - timee).." seconds")	
-os.exit()
+return os.exit()
 end
 ::nill::
 end
